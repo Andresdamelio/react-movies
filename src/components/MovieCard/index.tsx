@@ -10,7 +10,7 @@ const imagePath = 'https://image.tmdb.org/t/p/w300';
 
 const MovieCard = ({ movie }: Props) => {
   return (
-    <Container>
+    <Container data-testid='card'>
       <Body>
         <ImageContainer>
           <Image

@@ -2,8 +2,8 @@ import movie from '../fixtures/movie.json';
 import { Movie } from '../../src/interfaces';
 import MovieCard from '../../src/components/MovieCard';
 
-describe('MovieCard.cy.tsx', () => {
-  it('playground', () => {
+describe('Testing component MovieCard', () => {
+  it('The component is rendered correctly', () => {
     cy.mount(<MovieCard movie={movie as Movie} />);
     cy.get('[data-testid="title"]')
       .contains('Jurassic World: Dominion')

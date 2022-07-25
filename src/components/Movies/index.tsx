@@ -10,13 +10,13 @@ import Loader from './Loader';
 const MoviesList = ({ lang }: Params) => {
   const { data, loading, error }: Response = useFetch(lang);
 
-  if (loading) return <Loader />;
+  if (loading) return <Loader data-testid='list-loader' />;
 
   if (error)
     return <p>Ha ocurrido un error al cargar el listado de peliculas</p>;
 
   return (
-    <ListContainer>
+    <ListContainer data-testid='list-movies'>
       {data?.results?.map((movie) => (
         <MovieCard key={nanoid()} movie={movie} />
       ))}

@@ -1,7 +1,7 @@
 import { encode } from '../../helpers';
 
 describe('Testing encode function', () => {
-  test('encode', () => {
+  test('The encode function must return a transformed string.', () => {
     const params = {
       language: 'es'
     };
