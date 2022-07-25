@@ -1,4 +1,4 @@
-import { Params } from '../types';
+import { Params } from '../interfaces';
 
 export const encode = (params: Params): string => {
   const query = Object.keys(params)

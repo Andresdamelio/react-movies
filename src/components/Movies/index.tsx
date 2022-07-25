@@ -1,22 +1,25 @@
 import { nanoid } from 'nanoid';
 
-import { useFetch } from '../hooks';
-import { Params, Response } from '../interfaces';
-import MovieCard from './MovieCard';
+import { useFetch } from '../../hooks';
+import MovieCard from '../MovieCard';
+import { Params, Response } from '../../interfaces';
+
+import { ListContainer } from './style';
+import Loader from './Loader';
 
 const MoviesList = ({ lang }: Params) => {
   const { data, loading, error }: Response = useFetch(lang);
 
-  if (loading) return <p>Cargando data</p>;
+  if (loading) return <Loader />;
 
   if (error) return <p>Ha ocurrido un error</p>;
 
   return (
-    <div>
+    <ListContainer>
       {data?.results?.map((movie) => (
         <MovieCard key={nanoid()} movie={movie} />
       ))}
-    </div>
+    </ListContainer>
   );
 };
 

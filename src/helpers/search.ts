@@ -1,4 +1,4 @@
-import { Params } from '../types';
+import { Params } from '../interfaces';
 import { encode } from './encode';
 
 const URL_BASE = 'https://api.themoviedb.org/3';
