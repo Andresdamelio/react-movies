@@ -12,7 +12,8 @@ const MoviesList = ({ lang }: Params) => {
 
   if (loading) return <Loader />;
 
-  if (error) return <p>Ha ocurrido un error</p>;
+  if (error)
+    return <p>Ha ocurrido un error al cargar el listado de peliculas</p>;
 
   return (
     <ListContainer>

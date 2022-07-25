@@ -16,6 +16,10 @@ export const Title = styled.h2`
   font-wight: 400;
   font-family: sans-serif;
   color: #fff;
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const ImageContainer = styled.div`

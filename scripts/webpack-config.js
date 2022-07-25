@@ -12,7 +12,6 @@ const override = (config) => {
       filename: 'remoteEntry.js',
       remotes: {},
       exposes: {
-        './MoviesList': './src/components/MoviesList',
         './Movies': './src/components/Movies'
       },
       shared: {
