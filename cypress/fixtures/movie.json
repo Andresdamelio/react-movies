@@ -1,0 +1,20 @@
+{
+    "adult": false,
+    "backdrop_path": "/698FjyzLdpgXmUSr63LaRwblTmx.jpg",
+    "genre_ids": [
+        12,
+        28,
+        878
+    ],
+    "id": 507086,
+    "original_language": "en",
+    "original_title": "Jurassic World Dominion",
+    "overview": "Cuatro años después de la destrucción de Isla Nublar, los dinosaurios conviven – y cazan – con los seres humanos en todo el mundo. Este frágil equilibrio cambiará el futuro y decidirá, de una vez por todas, si los seres humanos seguirán en la cúspide de los depredadores en un planeta que comparten con los animales más temibles de la creación.",
+    "popularity": 12339.13,
+    "poster_path": "/sXeWfpT1EhG7f4uBouqraOhmouH.jpg",
+    "release_date": "2022-06-01",
+    "title": "Jurassic World: Dominion",
+    "video": false,
+    "vote_average": 7,
+    "vote_count": 2008
+}

@@ -16,9 +16,10 @@ const MovieCard = ({ movie }: Props) => {
           <Image
             src={`${imagePath}${movie.poster_path}`}
             alt={movie.original_title}
+            data-testid='image'
           />
         </ImageContainer>
-        <Title>{movie.title}</Title>
+        <Title data-testid='title'>{movie.title}</Title>
       </Body>
     </Container>
   );

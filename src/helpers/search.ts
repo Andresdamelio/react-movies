@@ -6,7 +6,9 @@ const URL_BASE = 'https://api.themoviedb.org/3';
 export const search = async (lang: string) => {
   try {
     let paramsDefault: Params = {
-      api_key: process.env.REACT_APP_API_KEY as string
+      api_key:
+        (process.env.REACT_APP_API_KEY as string) ||
+        'ac2e3ab638b0e375e2c104e35ae4798d'
     };
 
     if (lang) {
