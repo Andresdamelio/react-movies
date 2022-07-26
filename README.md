@@ -1,46 +1,78 @@
-# Getting Started with Create React App
+# Microfrontend React Movies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project created to expose components as microfrontend using Webpack Module Federation.
 
-## Available Scripts
+## Author
 
-In the project directory, you can run:
+- [twitter: @andres_damelio](https://twitter.com/andres_damelio)
+- [webiste: andresdamelio.tech](https://www.andresdamelio.tech)
 
-### `npm start`
+## Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Library:** [React](https://es.reactjs.org/)
+- **Language:** [Typescript](https://www.typescriptlang.org/)
+- **Styles:** [Styled components](https://styled-components.com/)
+- **Testing:**
+  - [Cypress](https://www.cypress.io/)
+  - [Jest](https://jestjs.io/)
+  - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Environment Variables
 
-### `npm test`
+To run this project, you will need to add the following environment variables to your .env file
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- REACT_APP_API_KEY: API KEY [themoviedb.org](https://themoviedb.org)
 
-### `npm run build`
+## Run Locally
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Clone the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  git clone https://github.com/andresdamelio/react-movies
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Go to the project directory
 
-### `npm run eject`
+```bash
+  cd react-movies
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Install dependencies
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Generate build
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+  npm run build
+```
 
-## Learn More
+Start the server
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+  npm run start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Running Tests
+
+To run tests, run the following command
+
+Run test components
+
+```bash
+  npm run cypress:component
+```
+
+Run test e2e
+
+```bash
+  npm run cypress:e2e
+```
+
+Run test jest
+
+```bash
+  npm run test
+```

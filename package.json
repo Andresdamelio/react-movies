@@ -22,7 +22,9 @@
     "start": "PORT=3001 node ./scripts/start.js",
     "build": "node ./scripts/build.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "cypress:component": "cypress open --component",
+    "cypress:e2e": "cypress open --e2e"
   },
   "eslintConfig": {
     "extends": [
