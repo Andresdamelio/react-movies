@@ -1,27 +1,25 @@
+import { Card } from './style';
 import { Movie } from '../../interfaces';
-
-import { Body, Container, Image, ImageContainer, Title } from './style';
+import { imagePath } from '../../helpers';
 
 type Props = {
   movie: Movie;
 };
 
-const imagePath = 'https://image.tmdb.org/t/p/w300';
-
 const MovieCard = ({ movie }: Props) => {
   return (
-    <Container data-testid='card'>
-      <Body>
-        <ImageContainer>
-          <Image
+    <Card data-testid='card'>
+      <Card.Body>
+        <Card.ImageContainer>
+          <Card.Image
             src={`${imagePath}${movie.poster_path}`}
             alt={movie.original_title}
             data-testid='image'
           />
-        </ImageContainer>
-        <Title data-testid='title'>{movie.title}</Title>
-      </Body>
-    </Container>
+        </Card.ImageContainer>
+        <Card.Title data-testid='title'>{movie.title}</Card.Title>
+      </Card.Body>
+    </Card>
   );
 };
 

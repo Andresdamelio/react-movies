@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Card: any = styled.div`
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
@@ -32,3 +32,8 @@ export const Image = styled.img`
   width: 100%;
   border-radius: 10px;
 `;
+
+Card.Body = Body;
+Card.Title = Title;
+Card.Image = Image;
+Card.ImageContainer = ImageContainer;

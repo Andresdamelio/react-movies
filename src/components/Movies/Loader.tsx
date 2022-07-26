@@ -1,10 +1,10 @@
 import ContentLoader from 'react-content-loader';
-import { ListContainer } from './style';
+import { Container } from './style';
 import { nanoid } from 'nanoid';
 
 const Loader = () => {
   return (
-    <ListContainer>
+    <Container>
       {Array.from({ length: 12 }).map(() => {
         return (
           <div key={nanoid()}>
@@ -20,7 +20,7 @@ const Loader = () => {
           </div>
         );
       })}
-    </ListContainer>
+    </Container>
   );
 };
 
